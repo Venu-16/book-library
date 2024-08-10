@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #333;
+    --background-color: #f4f4f4;
+    --container-bg-color: #fff;
+    --border-color: #ddd;
+    --button-color: #5cb85c;
+    --button-hover-color: #4cae4c;
+    --danger-button-color: #f44336;
+    --danger-button-hover-color: #d32f2f;
+    --heading-color: var(--primary-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--heading-color);
+    margin-bottom: 15px;
+}
+
+.form-container, .search-container, .library-container {
+    background: var(--container-bg-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    font-size: 16px;
+}
+
+button {
+    background: var(--button-color);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: var(--button-hover-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid var(--border-color);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.actions button {
+    background-color: var(--danger-button-color);
+    color: white;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.actions button:hover {
+    background-color: var(--danger-button-hover-color);
+}
